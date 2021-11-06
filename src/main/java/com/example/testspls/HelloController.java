@@ -10,8 +10,11 @@ public class HelloController {
     private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        Date date = new Date(System.currentTimeMillis());
-        welcomeText.setText("Hello today is " + date);
+    public void onHelloButtonClick() {
+        welcomeText.setText("Hello today is " + getDate());
+    }
+
+    public String getDate() {
+        return new Date(System.currentTimeMillis()).toString();
     }
 }
