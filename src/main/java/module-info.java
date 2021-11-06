@@ -10,6 +10,6 @@ module com.example.testspls {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.example.testspls to javafx.fxml;
+    opens com.example.testspls;
     exports com.example.testspls;
 }
